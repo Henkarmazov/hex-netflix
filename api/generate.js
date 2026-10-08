@@ -38,7 +38,10 @@ async function generateSingleToken() {
       country: data.profile?.country || '—',
       plan: data.profile?.plan || 'Premium',
       links: {
-        pc: `https://henkaramazov.id/login?nftoken=${encodedToken}`
+        pc: `https://netflix.com/?nftoken=${encodedToken}`,
+         android: `https://netflix.com/unsupported?nftoken=${encodedToken}`,
+         tv: `https://netflix.com/tv2?nftoken=${encodedToken}`,
+         tv8: `https://netflix.com/tv8?nftoken=${encodedToken}`
       }
     }
   } finally {
