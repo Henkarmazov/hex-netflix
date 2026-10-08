@@ -38,7 +38,7 @@ async function generateSingleToken() {
       country: data.profile?.country || '—',
       plan: data.profile?.plan || 'Premium',
       links: {
-        url: `https://henkaramazov.id/login?nftoken=${encodedToken}`
+        pc: `https://henkaramazov.id/login?nftoken=${encodedToken}`
       }
     }
   } finally {
